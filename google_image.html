@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width = device-width, inital-scale = 1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://googleapis.com" rel="stylesheet">
+        <title>New Tab</title>
+        <style>    
+      
+        body {
+            background-color: #22303b;
+            font-family: "Plus-Jakarta-Sans", sans-serif;
+        }
+
+        input {
+            border: transparent;
+            border-radius: 20px;
+            padding: 4px 15px;
+            margin: 2px;
+        }
+
+        #bar {
+            background-color: rgba(255, 255, 255, 0.106);
+            font-size: 15px;
+            width: 45%;   
+            height: 35px; 
+            position: absolute;
+            top: 45%;
+            left: 47%;
+            transform: translate(-50%, -50%);
+        }
+
+        #google {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #button {
+            margin: 2px;
+            color: white;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.045);   
+            position: absolute;
+            top: 45%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+            height: 35px;
+        }
+
+        #profile {
+            position: absolute;
+            top: 5%;
+            left: 97.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        #apps {
+            position: absolute;
+            top: 5%;
+            left: 94%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #search_link {
+            font-size: small;
+            color: blue;
+            position: absolute;
+            top: 5%;
+            left: 89%;
+            transform: translate(-50%, -50%);
+        }
+
+        </style>
+    </head>
+    <body>  
+        <a id = "search_link" href="index.html">Google Search</a> 
+        <img id = "google" src = "photos/google-image-logo.png" alt="Google Images" width = 400px>  
+        <img id = "profile" src = "photos/profiles.png" alt = "Profile" width = 50px>
+        <img id = "apps" src = "photos/apps.png" alt = "Apps" width = 37px>
+        <form action="https://google.com/search" method="GET">
+            <input id = bar type="text" name="q" placeholder="Ask Images">
+            <input id = button type="submit" value="Google Images">
+            <input type = "hidden" name = "tbm" value = "isch">
+            <input type = "hidden" name = "udm" value = "2">
+        </form>
+    </body>
+</html> 

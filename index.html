@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width = device-width, inital-scale = 1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://googleapis.com" rel="stylesheet">
+        <title>New Tab</title>
+        <style>    
+      
+        body {
+            color: white;
+            background-color: #22303b;
+            font-family: "Plus-Jakarta-Sans", sans-serif;
+        }
+
+        input {
+            border: transparent;
+            border-radius: 20px;
+            padding: 4px 15px;
+            margin: 2px;
+        }
+
+        #bar {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.106);
+            font-size: 15px;
+            width: 45%;   
+            height: 35px; 
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #google {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #button {
+            border-radius: 5px;
+            color: white;
+            margin: 2px;
+            background-color: rgba(255, 255, 255, 0.045);
+            position: absolute;
+            top: 55%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            height: 35px;
+        }
+
+        #profile {
+            position: absolute;
+            top: 5%;
+            left: 97.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        #apps {
+            position: absolute;
+            top: 5%;
+            left: 94%;
+            transform: translate(-50%, -50%);
+        }
+
+        #image_link {
+            font-size: small;
+            color: blue;
+            position: absolute;
+            top: 5%;
+            left: 89%;
+            transform: translate(-50%, -50%);
+        }
+
+        #advanced_link {
+            font-size: small;
+            color: blue;
+            position: absolute;
+            top: 5%;
+            left: 81%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #lucky {
+            padding: 4px 15px;
+            margin: 2px;
+            height: 35px;
+            border: transparent;
+            border-radius: 5px;
+            color: white;
+            margin: 2px;
+            background-color: rgba(255, 255, 255, 0.045);
+            position: absolute;
+            top: 55%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+
+        </style>
+    </head>
+    <body>    
+        <a id = "image_link" href="google_image.html">Google Images</a> 
+        <a id = "advanced_link" href="google_advanced.html">Google Advanced</a> 
+        <img id = "profile" src = "photos/profiles.png" alt = "Profile" width = 50px>
+        <img id = "apps" src = "photos/apps.png" alt = "Apps" width = 37px>
+        <img id = "google" src = "photos/google-logo.png" alt="Google" width = 400px>  
+        <form action="https://google.com/search" method="GET">
+            <input id = bar type="text" name="q" placeholder="Ask Google">
+            <input id = button type="submit" value="Google Search">
+            <button id = lucky type="submit" name="btnI" value="I">I'm Feeling Lucky</button>
+        </form>
+    </body>
+</html> 

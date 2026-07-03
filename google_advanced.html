@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width = device-width, inital-scale = 1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://googleapis.com" rel="stylesheet">
+        <title>Google Advanced</title>
+        <style>    
+      
+        body {
+            background-color: #22303b;
+            font-family: "Plus-Jakarta-Sans", sans-serif;
+        }
+
+        input {
+            border: transparent;
+            border-radius: 20px;
+            padding: 4px 15px;
+            margin: 2px;
+        }
+
+        h1 {
+            font-family: "Plus-Jakarta-Sans", sans-serif;
+            color: white;
+            font-weight: normal;
+            position: absolute;
+            top: 15%;
+            left: 10.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2 {
+            font-family: "Plus-Jakarta-Sans", sans-serif;
+            color: white;
+            font-weight: normal;
+            position: absolute;
+            top: 27%;
+            left: 7.5%;
+            transform: translate(-50%, -50%);       
+        }
+
+        p {
+            font-family: "Plus-Jakarta-Sans", sans-serif;
+            color: white;
+            font-weight: normal;
+        }
+
+        #bar1 {
+            background-color: rgba(255, 255, 255, 0.106);
+            font-size: 15px;
+            position: absolute;
+            width: 45%;   
+            height: 35px; 
+            border-radius: 10px;
+            top: 43%;
+            left: 43%;
+            transform: translate(-50%, -50%);
+        }
+
+        #bar2 {
+            background-color: rgba(255, 255, 255, 0.106);
+            font-size: 15px;
+            position: absolute;
+            width: 45%;   
+            height: 35px; 
+            border-radius: 10px;
+            top: 56%;
+            left: 43%;
+            transform: translate(-50%, -50%);
+        }
+
+        #bar3 {
+            background-color: rgba(255, 255, 255, 0.106);
+            font-size: 15px;
+            position: absolute;
+            width: 45%;   
+            height: 35px; 
+            border-radius: 10px;
+            top: 69%;
+            left: 43%;
+            transform: translate(-50%, -50%);
+        }
+
+        #bar4 {
+            background-color: rgba(255, 255, 255, 0.106);
+            font-size: 15px;
+            position: absolute;
+            width: 45%;   
+            height: 35px; 
+            border-radius: 10px;
+            top: 82%;
+            left: 43%;
+            transform: translate(-50%, -50%);
+        }
+
+        #google {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            transform: translate(-50%, -50%);
+        }
+
+        #button {
+            margin: 2px;
+            background-color: rgba(66, 133, 244, 1);
+            color: white;
+            position: absolute;
+            top: 94%;
+            left: 6.5%;
+            transform: translate(-50%, -50%);
+            height: 35px;
+        }
+        
+        #p1 {
+            position: absolute;
+            top: 40%;
+            left: 6.75%;
+            transform: translate(-50%, -50%);
+        }
+
+        #p2 {
+            position: absolute;
+            top: 53%;
+            left: 8.75%;
+            transform: translate(-50%, -50%);       
+        }
+
+        #p3 {
+            position: absolute;
+            top: 66%;
+            left: 7.5%;
+            transform: translate(-50%, -50%);  
+        }
+
+        #p4 {
+            position: absolute;
+            top: 79%;
+            left: 6%;
+            transform: translate(-50%, -50%);    
+        }
+
+        #image_link {
+            font-size: small;
+            color: blue;
+            position: absolute;
+            top: 5%;
+            left: 89%;
+            transform: translate(-50%, -50%);
+        }
+
+                #profile {
+            position: absolute;
+            top: 5%;
+            left: 97.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        #apps {
+            position: absolute;
+            top: 5%;
+            left: 94%;
+            transform: translate(-50%, -50%);
+        }
+
+        </style>
+    </head>
+    <body> 
+        <a id = "image_link" href="index.html">Google Search</a> 
+        <img id = "profile" src = "photos/profiles.png" alt = "Profile" width = 50px>
+        <img id = "apps" src = "photos/apps.png" alt = "Apps" width = 37px>
+        <h1>Advanced Search</h1> 
+        <h2>Find pages with</h2>
+        <p id = "p1">All of these words:</p>
+        <p id = "p2">This exact word or phrase:</p>
+        <p id = "p3">None of these words:</p>
+        <p id = "p4">Site or domain:</p>
+        <img id = "google" src = "photos/google-logo.png" alt="Google" width = 100px>  
+        <form action="https://google.com/search" method="GET">
+            <input id = "bar1" type="text" name="as_q" placeholder="All of these words">
+            <input id = "bar2" type="text" name="as_epq" placeholder="This exact word or phrase">
+            <input id = "bar3" type="text" name="as_eq" placeholder="None of these words">
+            <input id = "bar4" type="text" name="as_sitesearch" placeholder="Site or domain">
+            <input id = button type="submit" value="Advanced Search">
+        </form>
+    </body>
+</html> 
