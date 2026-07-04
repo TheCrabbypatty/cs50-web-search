@@ -4,9 +4,6 @@ A front-end web application that mimics the aesthetic and core functionality of 
 
 ## 🚀 Live Demo
 * https://youtu.be/dB-YpJSZA6Y
-
- or hosted site here)*
-
 ---
 
 ## ✨ Features
@@ -36,17 +33,6 @@ A front-end web application that mimics the aesthetic and core functionality of 
 
 * **HTML5**: Structured semantic layout for all three search pages.
 * **CSS3**: Custom styles implementing Flexbox/Grid to match Google's layout, fonts, margins, hover behaviors, and button graphics.
-
----
-
-## 📂 Project Structure
-
-```text
-├── index.html          # Main Google Search page
-├── images.html         # Google Image Search page
-├── advanced.html       # Google Advanced Search page
-└── styles.css          # Unified stylesheet for all pages
-```
 
 ---
 
